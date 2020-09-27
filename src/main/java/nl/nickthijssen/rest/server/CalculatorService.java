@@ -1,7 +1,7 @@
-package nl.fhict.se3.services.rest.server;
+package nl.nickthijssen.rest.server;
 
 import com.google.gson.Gson;
-import nl.fhict.se3.services.rest.shared.CSAbsResponse;
+import nl.nickthijssen.rest.shared.CSAbsResponse;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -18,7 +18,7 @@ public class CalculatorService {
         response.setExpression(msg);
         try {
             int value = Integer.parseInt(msg);
-            int result = (value<0)? -value:value;
+            int result = (value < 0) ? -value : value;
             response.setResult(Integer.toString(result));
         } catch (NumberFormatException nfe) {
             response.setResult("invalid value");

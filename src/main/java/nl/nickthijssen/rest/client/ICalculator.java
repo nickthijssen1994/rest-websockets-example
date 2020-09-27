@@ -1,4 +1,4 @@
-package nl.fhict.se3.services.rest.client;
+package nl.nickthijssen.rest.client;
 
 public interface ICalculator {
 

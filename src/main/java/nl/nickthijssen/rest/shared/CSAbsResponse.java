@@ -1,10 +1,10 @@
-package nl.fhict.se3.services.rest.shared;
+package nl.nickthijssen.rest.shared;
 
 public class CSAbsResponse {
 
     private String operation = "";
-    private String expression ="";
-    private  String result = "";
+    private String expression = "";
+    private String result = "";
 
 
     public String getOperation() {

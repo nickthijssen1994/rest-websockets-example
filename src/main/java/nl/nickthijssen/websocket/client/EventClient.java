@@ -1,4 +1,4 @@
-package nl.fhict.se3.services.websocket.client;
+package nl.nickthijssen.websocket.client;
 
 import org.eclipse.jetty.util.component.LifeCycle;
 
@@ -26,6 +26,7 @@ public class EventClient {
                 Session session = container.connectToServer(EventClientSocket.class, uri);
                 // Send a message
                 session.getBasicRemote().sendText("Hello");
+
                 // Close session
                 Thread.sleep(10000);
                 session.close();
